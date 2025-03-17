@@ -1,0 +1,12 @@
+category-encoders 
+imblearn
+scikit-learn
+pandas
+numpy
+xgboost
+scipy
+lightgbm
+seaborn
+mlflow
+fastf1
+jupyter
