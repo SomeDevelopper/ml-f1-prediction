@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration des paramètres
-MLFLOW_PORT=5001
+MLFLOW_PORT=5002
 MLFLOW_HOST="0.0.0.0"
 BACKEND_URI="sqlite:///mlflow.db"  # Utiliser PostgreSQL/MySQL si nécessaire
 ARTIFACT_PATH="./mlruns"

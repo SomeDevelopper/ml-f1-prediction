@@ -6,13 +6,13 @@ model_dir = 'models/'
 
 app = Flask(__name__)
 
-mlflow.set_tracking_uri('http://127.0.0.1:5001')
+mlflow.set_tracking_uri('http://127.0.0.1:5002')
 
 @app.route('/')
 def home():
     return {'Reponse': 'Bien arrivé'}
 
-MODEL_URI = 'runs:/a83478931323472c840fc41e4657db31/LGBMClassifier'
+MODEL_URI = 'runs:/e9e8cc687f82437cb7ac1d6d422d70b4/LGBMClassifier'
 loaded_model = mlflow.pyfunc.load_model(MODEL_URI)
 
 @app.route("/predict", methods=['POST'])

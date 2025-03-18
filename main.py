@@ -5,7 +5,7 @@ import requests
 url = 'http://127.0.0.1:5000/predict'  # Notez que j'ai changé le port à 5051 pour correspondre à votre Flask
 
 # Chemin vers votre fichier CSV
-csv_path = 'nor-extended-data-preprocessed.csv'
+csv_path = 'data/nor-extended-data-preprocessed.csv'
 
 # Préparation du fichier à envoyer
 files = {'fichier': open(csv_path, 'rb')}
